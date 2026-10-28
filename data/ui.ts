@@ -24,7 +24,6 @@ const en = {
     switchLabel: "اقرأ الموقع بالعربية",
   },
   theme: { toLight: "Switch to light mode", toDark: "Switch to dark mode" },
-  intro: { skip: "Skip" },
   marquee: ["Laravel", "PHP", "Databases", "Management Systems", "C#", "Clean CRUD", "Web Design"],
   hero: {
     badge: "Available for new opportunities",
@@ -129,7 +128,6 @@ const ar: typeof en = {
     switchLabel: "Read the site in English",
   },
   theme: { toLight: "التبديل إلى الوضع الفاتح", toDark: "التبديل إلى الوضع الداكن" },
-  intro: { skip: "تخطٍّ" },
   marquee: ["Laravel", "PHP", "قواعد البيانات", "أنظمة الإدارة", "C#", "CRUD نظيف", "تصميم الويب"],
   hero: {
     badge: "متاحة لفرص عمل جديدة",

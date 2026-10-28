@@ -13,7 +13,7 @@ const ease = [0.2, 0.8, 0.2, 1] as const;
 const DURATION = 2.6; // seconds the welcome screen stays before lifting
 
 export default function Intro({ children }: { children: React.ReactNode }) {
-  const { c, t } = useLocale();
+  const { c } = useLocale();
   const reduce = useReducedMotion();
   const [open, setOpen] = useState(true);
   const counter = useRef<HTMLSpanElement>(null);
@@ -141,16 +141,6 @@ export default function Intro({ children }: { children: React.ReactNode }) {
                 <span ref={counter}>00</span>
               </span>
             </motion.div>
-
-            <button
-              className="intro-skip"
-              onClick={(e) => {
-                e.stopPropagation();
-                close();
-              }}
-            >
-              {t.intro.skip}
-            </button>
           </motion.div>
         )}
       </AnimatePresence>

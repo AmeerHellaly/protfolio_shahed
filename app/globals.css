@@ -742,12 +742,6 @@ section[id] { scroll-margin-top: 70px; }
 .intro-bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--rose), var(--lilac), var(--peach)); transform-origin: left; }
 :root[dir="rtl"] .intro-bar i { transform-origin: right; background: linear-gradient(270deg, var(--rose), var(--lilac), var(--peach)); }
 .intro-count { margin-top: 12px; font-size: 12px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; letter-spacing: .1em; }
-.intro-skip {
-  position: absolute; bottom: max(24px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%);
-  padding: 9px 18px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--ink-soft);
-  border: 1px solid var(--line); background: var(--card); transition: border-color .3s, color .3s;
-}
-.intro-skip:hover { border-color: var(--rose); color: var(--rose-deep); }
 :root[dir="rtl"] .intro-name em { font-style: normal; }
 :root[dir="rtl"] :is(.intro-name, .intro-role) { letter-spacing: 0; text-transform: none; }
 /* the calligraphic face runs small — give the Arabic name more size */
