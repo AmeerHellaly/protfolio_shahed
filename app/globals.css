@@ -235,6 +235,7 @@ img, svg { display: block; max-width: 100%; }
 @keyframes bob { 50% { transform: translateY(-14px); } }
 
 @media (max-width: 900px) {
+  .hero { padding-bottom: 56px; }
   .hero-grid { grid-template-columns: minmax(0, 1fr); }
   .hero-canvas { order: -1; height: min(46vh, 420px); margin-top: -10px; margin-bottom: -40px; }
   .hero-text { text-align: center; }
@@ -242,7 +243,7 @@ img, svg { display: block; max-width: 100%; }
   .chip-float { display: none; }
 }
 @media (max-width: 600px) {
-  .hero { padding-top: 84px; }
+  .hero { padding-top: 84px; padding-bottom: 44px; }
   .hero-canvas { height: min(40vh, 340px); margin-bottom: -24px; }
   .badge { max-width: 100%; font-size: 12px; padding: 7px 14px 7px 10px; text-align: start; }
   .pulse { flex-shrink: 0; }
@@ -336,6 +337,11 @@ img, svg { display: block; max-width: 100%; }
 .soft-row span { padding: 10px 18px; border-radius: 999px; border: 1px dashed var(--line); color: var(--ink-soft); font-size: 14px; }
 
 @media (max-width: 900px) { .beds { grid-template-columns: 1fr; } }
+/* on phones the soft skills fill each row edge to edge, like the skill chips above */
+@media (max-width: 600px) {
+  .soft-row { gap: 8px; }
+  .soft-row span { flex: 1 1 auto; text-align: center; white-space: nowrap; padding: 9px 14px; font-size: 13px; }
+}
 @media (max-width: 420px) {
   .bed { padding: 24px 20px; }
   .seed { padding: 9px 14px; font-size: 13px; }
