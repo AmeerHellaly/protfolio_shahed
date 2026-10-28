@@ -1,0 +1,25 @@
+# dependencies (reinstalled with `npm install`)
+node_modules/
+
+# Next.js build output
+.next/
+out/
+build/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# local env files
+.env*
+
+# logs
+npm-debug.log*
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# local Claude Code settings
+.claude/settings.local.json
